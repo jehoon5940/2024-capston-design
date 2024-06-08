@@ -1,0 +1,35 @@
+.seat-layout {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.seat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.seat.available {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.seat.unavailable {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.seat span {
+    display: block;
+    text-align: center;
+    margin: 5px 0;
+}
